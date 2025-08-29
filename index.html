@@ -1,48 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraFlix</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
+/*variaveis*/
+:root {
+    --preto: #000;
+    --branco: #fff;
+    --lilas-claro: #eb76db;
+    --azul-médio: #2f4dd1;
+    --amarelo:#cfe80d;
+}
+/*corpo da página*/
+body {
+    color: var(--branco);/*cor da fonte*/
+    background-color: var(--preto);/*cor de fundo*/
+    margin: 0px; /* não terá margem padrão*/
+}
 
-<body> <!--Inicio, corpo do documento-->
-    <header>AluraFlix</header>
-    <section>
-        <div>
-            <h1>DIARIO DE UMA PAIXAO</h1>
-            <p>#diário-paixao</p>
-        </div>
+header {
+    border: solid 2px;
+    border-color: var(--branco);/*cor da borda*/
+    padding: 20px;/*espaçamento interno*/
+    font-size: 32px;/*tamanho da fonte*/
+    color: var(--amarelo);/*cor da fonte*/
+}
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DyfWPxB1pZM?si=P8BRVDCsvnVQTJof" title="YouTube video player" 
-               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="
-               strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-  </section>
+section {
+    background-color: var(--lilas-claro);/*cor de fundo*/
+    padding-bottom: 80px;/*espaçamento inferior*/
+    padding-top: 80px;/*espaçamento superior*/
+    display: flex;/*alterar a disposição*/
+    justify-content: center;/* justificado no centro*/
+}
 
-    <!--Carrossel de imagens-->
-    <section class="recomendacoes">
-<h2>Outras recomendações</h2>
-<div class="outras-recomendacoes">
-<a href="https://www.youtube.com/watch?v=10kObuxwee4">
-<img src="https://img.youtube.com/vi/10kObuxwee4/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=VEdh5a0kIZE">
-<img src="https://img.youtube.com/vi/VEdh5a0kIZE/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=xSaUcEzopiE">
-<img src="https://img.youtube.com/vi/xSaUcEzopiE/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=N84TDkRoG0o">
-<img src="https://img.youtube.com/vi/N84TDkRoG0o/maxresdefault.jpg" />
-</a>
-<a href="https://www.youtube.com/watch?v=QP2QG43VNXo">
-<img src="https://img.youtube.com/vi/QP2QG43VNXo/maxresdefault.jpg" />
-</a>
-</div>
-</section>
+div {
+    margin-right: 20px;/*margem a direita*/
+}
 
-</body><!--Fim, corpo do documento-->
-</html>
+h1 {
+font-size: 1.5rem;
+text-align: center;
+padding-top: 10px;
+}
+
+p {
+font-size: 1rem;
+text-align: center;
+padding-top: 0px;
+}
+
+.chamada-texto {
+margin-right: 20px;
+}
+
+.chamada {
+background: rgb(184, 156, 213);
+padding-bottom: 80px;
+padding-top: 80px;
+display: flex;
+justify-content: center;
+}
+
+img {
+width: 300px;
+height: 200px;
+}
+
+.outras-recomendacoes {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+}
+
+h2 {
+margin-left: 30px;
+}
