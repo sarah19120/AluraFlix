@@ -79,3 +79,9 @@ margin-left: 30px;
 .principal {
     background-color: aquamarine;
 }
+
+/*rodapé*/
+footer {
+color: var(--branco);
+text-align: center;
+}
