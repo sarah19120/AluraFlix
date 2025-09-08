@@ -2,9 +2,9 @@
 :root {
     --preto: #000;
     --branco: #fff;
-    --lilas-claro: #eb76db;
-    --azul-médio: #2f4dd1;
-    --amarelo:#cfe80d;
+    --lilas-claro: #9f76eb;
+    --azul-médio: #d12fb3;
+    --amarelo:#0d4fe8;
 }
 /*corpo da página*/
 body {
